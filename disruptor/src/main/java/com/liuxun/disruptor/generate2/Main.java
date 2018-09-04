@@ -40,6 +40,7 @@ public class Main {
         */
 
         // 六边形操作
+        /* */
         Handler1 h1 = new Handler1();
         Handler2 h2 = new Handler2();
         Handler3 h3 = new Handler3();
@@ -49,6 +50,8 @@ public class Main {
         disruptor.after(h1).handleEventsWith(h4);
         disruptor.after(h2).handleEventsWith(h5);
         disruptor.after(h4,h5).handleEventsWith(h3);
+
+
         disruptor.start(); // 启动
         CountDownLatch latch = new CountDownLatch(1);
         // 生产者准备

@@ -11,7 +11,8 @@ public class TradePublisher implements Runnable {
     Disruptor<Trade> disruptor;
     private CountDownLatch latch;
 
-    private static int LOOP = 10; // 模拟百万次交易的发生
+//    private static int LOOP = 10; // 模拟百万次交易的发生
+    private static int LOOP = 1; // 为了清晰查看数据，在此设置只生产一条数据
 
     public TradePublisher(Disruptor<Trade> disruptor, CountDownLatch latch) {
         this.disruptor = disruptor;
