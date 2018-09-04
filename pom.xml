@@ -6,7 +6,11 @@
 
     <groupId>com.liuxun.concurrent</groupId>
     <artifactId>concurrent-programming</artifactId>
+    <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>disruptor</module>
+    </modules>
 
 
 </project>
